@@ -1,0 +1,153 @@
+body{
+    background: #be5050;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 4em;
+}
+
+@font-face{
+    font-family: 'Karla';
+    src: url(https://fonts.google.com/specimen/Karla);
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 'premierecase premierecase'
+                         'deuxiemecase troisiemecase';
+    grid-template-rows: 1fr 1fr;
+    padding: 20px;
+    margin: 10px;
+
+}
+
+#premierecase{
+    grid-area: premierecase;
+    background: #ddc8c8;
+    padding: 30px;
+    border-radius: 10px 10px 0 0;
+    font-size: 15px;
+}
+
+p{
+    color: hsl(209, 67%, 26%);
+}
+
+p:hover{
+    color: greenyellow;
+}
+
+h2{
+    color: hsl(217, 68%, 45%);
+}
+
+
+#deuxiemecase{
+    grid-area: deuxiemecase;
+    background: #201d1f;
+    color: #ffffff;
+    border-radius: 0 0 0 10px;
+    padding: 30px;
+}
+
+#troisiemecase{
+    grid-area: troisiemecase;
+    background: #0c9c59;
+    color: hsl(218, 22%, 67%);
+    border-radius: 0 0 10px 0;
+    padding: 30px;
+    
+}
+
+h3{
+   
+    padding-bottom: 15px;
+}
+
+h4{
+    text-align: left center;
+    color: blanchedalmond;
+    width: 200px;
+    line-height: 25px;
+    
+   
+}
+
+
+button{
+    background: chocolate;
+    text-align: center;
+    border-radius: 10px;
+    width: 90%;
+    margin: 5px;
+    padding: 15px;
+    display: block;
+    box-shadow: 2px 2px rgb(206, 226, 206);
+    color: hsl(217, 68%, 45%);
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    margin-top: 30px;
+}
+
+#deuxiemecase #boutton{
+    margin: 0 auto;
+}
+
+strong{
+    font-size: 25px;
+}
+
+
+
+footer p{
+    text-align: center;
+}
+
+footer p:hover{
+    color: hsla(350, 91%, 41%, 0.781);
+}
+
+
+
+
+/* mode responsive */
+
+@media screen and (max-width: 566px) {
+   body{
+       width: 90%;
+
+   }
+
+    main{
+        grid-row: 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: 'premierecase'
+                             'deuxiemecase' 
+                             'troisiemecase';
+       margin: 0;
+       padding:0;
+       display: block;
+    }
+
+    #deuxiemecase{
+        border-radius: 0;
+    }
+    #troisiemecase{
+        border-radius: 0 0 10px 10px;
+    }
+    
+    p{
+        color: lawngreen;
+    }
+
+    span{
+        color: rgb(70, 64, 64);
+    }
+
+    button{
+        position: relative;
+    
+    }
+
+}
